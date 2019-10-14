@@ -5,24 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://bootswatch.com/4/cyborg/bootstrap.min.css">
+    
     <title>Text Animator</title>
     <style>
-        body{
-            background-image: url("video.gif");
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-        }
-        a{
-            text-decoration: none;
-        }
-        #myVideo {
-            position: fixed;
-            right: 0;
-            bottom: 0;
-            min-width: 100%; 
-            min-height: 100%;
-        }
+        
         .content {
             position: fixed;
             bottom: 0;
@@ -33,24 +20,6 @@
             padding: 20px;
         }
 
-        /* Style the button used to pause/play the video */
-        #myBtn {
-            width: 200px;
-            font-size: 18px;
-            padding: 10px;
-            border: none;
-            background: #000;
-            color: #fff;
-            cursor: pointer;
-            border-radius : 25px;
-        }
-
-        #myBtn:hover {
-            background: #ddd;
-            color: black;
-          
-        }
-        
         .upload{
             border : 2px solid black;
             margin : 10px 0px;
@@ -88,8 +57,8 @@
 </head>
 <body>
 <center>
-    <div class="content">
-        <h1 class="glow">GLOWING TEXT</h1>
+    <div class="container">
+        <h1 class="glow navbar bg-primary">GLOWING TEXT</h1>
             <h1>TEXT ANIMATOR</h1>
             <h2>Images brought to life</h2>
             <div class="upload"><p>Upload Your Image here</p>
@@ -98,11 +67,11 @@
                 <input type="submit" value="Upload Image" name="submit" id="submit" class="extra">
             </form></div>
             <!-- Use a button to pause/play the video with JavaScript -->
-            <a href="Circle Parking/index.html"><button id="myBtn">Growing Heads</button></a>
-            <a href="Steering behaviour/index.html"><button id="myBtn">Touch Me Not</button></a>
-            <a href="Circle Parking Bubbling/index.html"><button id="myBtn">Boiling Rings</button></a>
-            <a href="Waving Balls/index.html"><button id="myBtn">Waving Balls</button></a>
-            <a href="Circle Parking Glowing/index.html"><button id="myBtn">Flashing Atoms</button></a>            
+            <a href="Circle Parking/index.html" class="btn btn-warning"><button id="myBtn">Growing Heads</button></a>
+            <a href="Steering behaviour/index.html" class="btn btn-warning"><button id="myBtn">Touch Me Not</button></a>
+            <a href="Circle Parking Bubbling/index.html" class="btn btn-warning"><button id="myBtn">Boiling Rings</button></a>
+            <a href="Waving Balls/index.html" class="btn btn-warning"><button id="myBtn">Waving Balls</button></a>
+            <a href="Circle Parking Glowing/index.html" class="btn btn-warning"><button id="myBtn">Flashing Atoms</button></a>            
             <?php 
                 if(isset($_POST['submit'])){
                     $file_name = $_FILES['file']['name'];  
@@ -125,4 +94,7 @@
             ?>
     </div></center>
 </body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </html>
