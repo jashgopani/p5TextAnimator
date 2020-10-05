@@ -118,6 +118,9 @@
                         echo "<script>sessionStorage.setItem(\"type\",\"$file_ext\");</script>";
                         echo "<script>alert(\"Image Uploaded\");</script>";
                         echo "<script>alert(\" Click on any of the effects to preview\");</script>";
+                        echo "<script>sessionStorage.setItem(\"type\",\"$file_ext\");</script>";
+                        echo "<script>alert(\"Image Uploaded\");</script>";
+                        echo "<script>alert(\" Click on any of the effects to preview\");</script>";
                        
                     }
                     
