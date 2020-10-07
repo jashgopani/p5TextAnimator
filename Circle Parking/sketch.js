@@ -32,7 +32,7 @@ function setup(){
 }
 
 function draw(){
-	frameRate(9960);
+	frameRate(9999);
 	background(0);
 	console.log(attempts);
  	attempts -= 100;
