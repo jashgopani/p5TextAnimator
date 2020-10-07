@@ -47,7 +47,7 @@
             padding: 10px;
             border: none;
             background: #000;
-            color: #fff;
+            color: #add8e6;
             cursor: pointer;
             border-radius : 25px;
         }
