@@ -4,6 +4,7 @@ var spots = [];
 var attempts = 0;
 
 function preload(){
+	console.log('preload');
 	var path = '../uploads/user.'+sessionStorage.getItem("type");
 	img=loadImage(path);
 }
@@ -14,7 +15,9 @@ function setup(){
 	image(img,0,0);
 	loadPixels();
 	for(var x=0;x<img.width;x++){
+		console.log(x);
 		for(var y=0;y<img.height;y++){
+			console.log(y);
 			var index = x + y*img.width;
 			var c = get(x,y);
 			if((c[0]>200 && c[1]>200 && c[2]>200)){
@@ -28,7 +31,7 @@ function setup(){
 	}
 
 	attempts = spots.length;
-
+	console.log(attempts);
 }
 
 function draw(){
@@ -74,11 +77,11 @@ function draw(){
 function newCircle(){
 	var r=Math.floor(Math.random() * (spots.length) );
 	var spot = spots[r];
-
+	
 	//generating random position coordinates
 	var x=spot.x;
 	var y=spot.y;
-	// console.log(x,y);
+	console.log(x,y);
 
 	var valid = true;
 	circles.forEach(function(c){
