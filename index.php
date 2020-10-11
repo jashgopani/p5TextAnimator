@@ -23,6 +23,12 @@
         a{
             text-decoration: none;
         }
+        .round{
+            border-radius:20px;
+            color: white;
+            background-color: red;
+            
+        }
         #myVideo {
             position: fixed;
             right: 0;
