@@ -11,4 +11,7 @@ After the image is successfully uploaded, the user will see a pop-up message and
 
 ### Developed by Chetan Kachaliya and Jash Gopani.
 
+## For contributors
+You can update the compliments.txt file for better compliments
+
 
