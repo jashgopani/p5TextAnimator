@@ -6,6 +6,7 @@ function Circle(x,y){
 	this.colorRed = Math.floor(Math.random() * (255 -1)+1 );
 	this.colorGreen = Math.floor(Math.random() * (255 -1)+1 );
 	this.colorBlue = Math.floor(Math.random() * (255 -1)+1 );
+	console.log('new circle',this,this.x,this.y,this.r);
 }
 
 Circle.prototype.show = function(){
