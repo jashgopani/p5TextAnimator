@@ -10,14 +10,11 @@ function preload(){
 }
 
 function setup(){
-	console.log(img);
 	createCanvas(img.width,img.height);
 	image(img,0,0);
 	loadPixels();
 	for(var x=0;x<img.width;x++){
-		console.log(x);
 		for(var y=0;y<img.height;y++){
-			console.log(y);
 			var index = x + y*img.width;
 			var c = get(x,y);
 			if((c[0]>200 && c[1]>200 && c[2]>200)){
@@ -31,7 +28,6 @@ function setup(){
 	}
 
 	attempts = spots.length;
-	console.log(attempts);
 }
 
 function draw(){
@@ -68,9 +64,6 @@ function draw(){
 		c.grow();
 		c.show();
 	});
-
-	
-	
 
 }
 
