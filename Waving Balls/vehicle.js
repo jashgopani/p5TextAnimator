@@ -59,6 +59,8 @@ Vehicle.prototype.update = function(){
 	this.pos.add(this.vel);
 	this.vel.add(this.acc);
 	this.acc.mult(0);
+	console.log('new velocity',this.vel);
+	console.log('new acceleration',this.acc);
 }
 
 Vehicle.prototype.show = function(){
