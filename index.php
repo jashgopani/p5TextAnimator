@@ -55,7 +55,7 @@
             background: #000;
             color: #add8e6;
             cursor: pointer;
-            border-radius : 25px;
+            border-radius : 26px;
         }
 
         #myBtn:hover {
