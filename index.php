@@ -43,7 +43,7 @@
             font-family : sans-serif;
             color: #000;
             width: 100%;
-            padding: 20px;
+            padding: 21px;
         }
 
         /* Style the button used to pause/play the video */
