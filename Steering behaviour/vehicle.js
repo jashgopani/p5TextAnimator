@@ -63,3 +63,6 @@ Vehicle.prototype.show = function(){
 	strokeWeight(10);
 	point(this.pos.x,this.pos.y);
 }
+/**
+Har varas aa karya hu mafat na merch mate karu chu :)
+**/
