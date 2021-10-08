@@ -42,6 +42,8 @@ function setup(){
 	}
 }
 
+console.log("For hacktober");
+
 function draw(){
 	// frameRate();
 	background(0);
