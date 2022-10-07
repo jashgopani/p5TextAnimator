@@ -10,6 +10,7 @@ function preload(){
 }
 
 function setup(){
+	const labels = 'hacktoberfest-accepted';
 	createCanvas(img.width,img.height);
 	image(img,0,0);
 	loadPixels();
