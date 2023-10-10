@@ -69,3 +69,6 @@ Vehicle.prototype.show = function(){
 	strokeWeight(1);
 	ellipse(this.pos.x,this.pos.y,5,5);
 }
+Vehicle.prototype.debug = function(){
+	console.log({this});
+}
