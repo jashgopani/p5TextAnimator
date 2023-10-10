@@ -96,3 +96,5 @@ function newCircle(){
 	}
 
 }
+
+console.log('debug mode');
