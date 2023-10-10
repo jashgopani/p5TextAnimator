@@ -29,6 +29,10 @@
             background-color: red;
             
         }
+        .classic{
+            color:purple;
+            padding: 2px;
+        }
         #myVideo {
             position: fixed;
             right: 0;
